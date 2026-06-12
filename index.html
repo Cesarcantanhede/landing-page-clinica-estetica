@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Bella Estética </title>
+
+    <style> 
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header{
+            background: linear-gradient(135deg, #d63384, #8e44ad);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1{
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        button{
+            background: #ffffff;
+            color: #8e44ad;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;            
+        }
+
+        section{
+           max-width: 1200px;
+           margin: auto;
+           padding: 60px 20px;
+               
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+               
+        .servicos{
+            display:flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card{
+            background:white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .card h3{
+            margin-bottom: 15px;
+        }
+
+        .preco{
+            font-size: 24px;
+            font-weight: bold;
+            color: #d63384;
+            
+        }
+
+        .formulario{
+            background:white;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+                }
+
+                input{
+                    width: 100%;
+                    padding: 12px;
+                    margin-bottom:15px;
+        
+                }
+        .formulario button{
+            width: 100%;
+            background: #d63384;
+            color: white;
+
+        }    
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Clínica Bella Estética</h1>
+        <p>Realçando sua beleza com tratamentos modernos</p>
+
+
+
+        <button>Agendar avaliação</button>
+
+        
+    </header>
+
+    <section>
+        <h2>Nossos Serviços</h2>
+      
+        <div class="servicos">
+
+            <div class="card">
+                <h3>Limpeza de pele</h3>
+                <p class="preco">R$ 120</p>
+            </div>
+
+            <div class="card">
+                <h3>Drenagem linfática</h3>
+                <p class="preco">R$ 150</p>
+            </div>
+
+            <div class="card">
+                <h3>Massagem Relaxante</h3>
+                <p class="preco">R$ 180</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section>
+    <h2>Solicite um Orçamento</h2>
+
+    <div class="formulario">
+
+        <input ype="text" placeholder="Seu nome">
+
+        <input type="tel" placeholder="whatsapp">
+
+        <button>Enviar</button>
+        
+    </div>
+
+    </section>
+</body>
+</html>
