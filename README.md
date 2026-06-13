@@ -1,2 +1,32 @@
-# landing-page-clinica-estetica
-Landing page para clínica de estética com serviços, preços e agendamento.
+# Landing Page - Clínica de Estética
+
+Projeto desenvolvido para praticar HTML, CSS, Git e GitHub.
+
+## Funcionalidades
+
+- Página inicial para clínica de estética
+- Catálogo de serviços
+- Exibição de preços
+- Formulário para orçamento
+- Seção de depoimentos
+- Botão para contato via WhatsApp
+- Layout responsivo
+
+## Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- Git
+- GitHub
+
+## Objetivo
+
+Desenvolver uma landing page moderna para captação de clientes e divulgação de serviços.
+
+## Autor
+
+César Cantanhede
+
+📍 Distrito Federal
+
+📸 Instagram: @cesarcantanhede
