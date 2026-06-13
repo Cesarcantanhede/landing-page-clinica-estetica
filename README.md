@@ -12,7 +12,7 @@ Projeto desenvolvido para praticar HTML, CSS, Git e GitHub.
 - Botão para contato via WhatsApp
 - Layout responsivo
 
-## Tecnologias utilizadas
+##Tecnologias Utilizadas
 
 - HTML5
 - CSS3
