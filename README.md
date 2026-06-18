@@ -23,6 +23,10 @@ Projeto desenvolvido para praticar HTML, CSS, Git e GitHub.
 
 Desenvolver uma landing page moderna para captação de clientes e divulgação de serviços.
 
+## Demonstração
+
+👉 [Clique aqui para acessar o projeto](https://cesarcantanhede.github.io/landing-page-clinica-estetica/)
+
 ## Autor
 
 César Cantanhede
