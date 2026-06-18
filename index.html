@@ -186,6 +186,40 @@ footer{
 }
 </style>
 </head>
+
+<script>
+
+function agendar(){
+
+    let nome = document.getElementById("nome").value;
+    let whatsapp = document.getElementById("whatsapp").value;
+    let servico = document.getElementById("servico").value;
+    let data = document.getElementById("data").value;
+    let hora = document.getElementById("hora").value;
+
+    if(
+        nome === "" ||
+        whatsapp === "" ||
+        servico === "" ||
+        data === "" ||
+        hora === ""
+    ){
+        alert("Preencha todos os campos.");
+        return;
+    }
+
+    alert(
+        "Agendamento realizado!\n\n" +
+        "Nome: " + nome +
+        "\nServiço: " + servico +
+        "\nData: " + data +
+        "\nHorário: " + hora
+    );
+}
+
+</script>
+
+
 <body>
 
 <header>
@@ -225,27 +259,37 @@ footer{
         </div>
 
         <div class="card">
-            <p>“Ambiente confortável e profissionais muito atenciosas.”</p>
+            <p>“Ambiente confortável e ///profissionais muito atenciosas.”</p>
             <strong>— Mariana Silva</strong>
         </div>
     </div>
 </section>
 
 <section id="orcamento">
-    <h2>Solicite um Orçamento</h2>
+    <h2>Agende seu Horário</h2>
 
     <div class="formulario">
-        <input type="text" placeholder="Seu nome">
-        <input type="tel" placeholder="WhatsApp">
-        <button>Enviar</button>
-    </div>
-</section>
 
-<section class="cta">
-    <h2>Pronta para cuidar da sua beleza?</h2>
-    <a class="whatsapp" href="https://wa.me/5561999999999" target="_blank">
-        Falar pelo WhatsApp
-    </a>
+        <input type="text" id="nome" placeholder="Seu nome">
+
+        <input type="tel" id="whatsapp" placeholder="WhatsApp">
+
+        <select id="servico">
+            <option value="">Selecione um serviço</option>
+            <option>Limpeza de Pele</option>
+            <option>Drenagem Linfática</option>
+            <option>Massagem Relaxante</option>
+        </select>
+
+        <input type="date" id="data">
+
+        <input type="time" id="hora">
+
+        <button onclick="agendar()">
+            Confirmar Agendamento
+        </button>
+
+    </div>
 </section>
 
 <footer>
