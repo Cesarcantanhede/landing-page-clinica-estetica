@@ -7,6 +7,30 @@
 <title>Clínica Bella Estética</title>
 
 <style>
+
+    nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#d63384;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#111827;
+    padding:15px;
+    text-align:center;
+    transition:0.3s;
+    z-index:1000;
+}
+
+
 *{
     margin:0;
     padding:0;
@@ -187,6 +211,101 @@ footer{
 </style>
 </head>
 
+
+
+
+<body>
+
+    <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#orcamento">Agendamento</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<header>
+    <h1>Clínica Bella Estética</h1>
+    <p>Realçando sua beleza com tratamentos modernos.</p>
+    <a class="whatsapp" href="#orcamento">Agendar Avaliação</a>
+</header>
+
+<section id="servicos">
+    <h2>Nossos Serviços</h2>
+
+    <div class="servicos">
+        <div class="card">
+            <h3>Limpeza de Pele</h3>
+            <p class="preco">R$ 120</p>
+        </div>
+
+        <div class="card">
+            <h3>Drenagem Linfática</h3>
+            <p class="preco">R$ 150</p>
+        </div>
+
+        <div class="card">
+            <h3>Massagem Relaxante</h3>
+            <p class="preco">R$ 180</p>
+        </div>
+    </div>
+</section>
+
+<section id="depoimentos">
+    <h2>Depoimentos</h2>
+
+    <div class="depoimentos">
+        <div class="card">
+            <p>“Atendimento excelente e resultado maravilhoso!”</p>
+            <strong>— Ana Paula</strong>
+        </div>
+
+        <div class="card">
+            <p>“Ambiente confortável e profissionais muito atenciosas.”</p>
+            <strong>— Mariana Silva</strong>
+        </div>
+    </div>
+</section>
+
+<section id="orcamento">
+    <h2>Agende seu Horário</h2>
+
+    <div class="formulario">
+
+        <input type="text" id="nome" placeholder="Seu nome">
+
+        <input type="tel" id="whatsapp" placeholder="WhatsApp">
+
+        <select id="servico">
+            <option value="">Selecione um serviço</option>
+            <option>Limpeza de Pele</option>
+            <option>Drenagem Linfática</option>
+            <option>Massagem Relaxante</option>
+        </select>
+
+        <input type="date" id="data">
+
+        <input type="time" id="hora">
+
+        <button onclick="agendar()">
+            Confirmar Agendamento
+        </button>
+
+    </div>
+</section>
+
+
+<section class="cta" id="contato">
+    <h2>Pronta para cuidar da sua beleza?</h2>
+    <a class="whatsapp" href="https://wa.me/5561981350095" target="_blank">
+        Falar pelo WhatsApp
+    </a>
+</section>
+
+
+<footer>
+    <p>Clínica Bella Estética © 2026</p>
+</footer>
+
 <script>
 
 function agendar(){
@@ -225,84 +344,25 @@ Horário: ${hora}`;
     window.open(link, "_blank");
 }
 
+let ultimoScroll = 0;
+
+window.addEventListener("scroll", function(){
+
+    let atual = window.pageYOffset;
+    let menu = document.querySelector("nav");
+
+    if(atual > 50){
+        menu.style.background = "#d63384";
+    }else{
+        menu.style.background = "#111827";
+    }
+
+    ultimoScroll = atual;
+});
+
 </script>
 
-
-<body>
-
-<header>
-    <h1>Clínica Bella Estética</h1>
-    <p>Realçando sua beleza com tratamentos modernos.</p>
-    <a class="whatsapp" href="#orcamento">Agendar Avaliação</a>
-</header>
-
-<section>
-    <h2>Nossos Serviços</h2>
-
-    <div class="servicos">
-        <div class="card">
-            <h3>Limpeza de Pele</h3>
-            <p class="preco">R$ 120</p>
-        </div>
-
-        <div class="card">
-            <h3>Drenagem Linfática</h3>
-            <p class="preco">R$ 150</p>
-        </div>
-
-        <div class="card">
-            <h3>Massagem Relaxante</h3>
-            <p class="preco">R$ 180</p>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2>Depoimentos</h2>
-
-    <div class="depoimentos">
-        <div class="card">
-            <p>“Atendimento excelente e resultado maravilhoso!”</p>
-            <strong>— Ana Paula</strong>
-        </div>
-
-        <div class="card">
-            <p>“Ambiente confortável e ///profissionais muito atenciosas.”</p>
-            <strong>— Mariana Silva</strong>
-        </div>
-    </div>
-</section>
-
-<section id="orcamento">
-    <h2>Agende seu Horário</h2>
-
-    <div class="formulario">
-
-        <input type="text" id="nome" placeholder="Seu nome">
-
-        <input type="tel" id="whatsapp" placeholder="WhatsApp">
-
-        <select id="servico">
-            <option value="">Selecione um serviço</option>
-            <option>Limpeza de Pele</option>
-            <option>Drenagem Linfática</option>
-            <option>Massagem Relaxante</option>
-        </select>
-
-        <input type="date" id="data">
-
-        <input type="time" id="hora">
-
-        <button onclick="agendar()">
-            Confirmar Agendamento
-        </button>
-
-    </div>
-</section>
-
-<footer>
-    <p>Clínica Bella Estética © 2026</p>
-</footer>
-
 </body>
+
+
 </html>
